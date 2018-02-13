@@ -1,9 +1,12 @@
 #!/usr/bin/env bash
 configpath=$HOME/.config/viper4linux
-idfile=$configpath/sinkid.tmp
-pidfile=$configpath/pid.tmp
+tmppath=/tmp/viper4linux
+idfile=$tmppath/sinkid.tmp
+pidfile=$tmppath/pid.tmp
 devicefile=$configpath/devices.conf
-logfile=$configpath/viper.log
+logfile=$tmppath/viper.log
+mkdir -p $configpath
+mkdir -p $tmppath
 
 start () {
 	declare $(head -n1 $devicefile) #get location and desc from file

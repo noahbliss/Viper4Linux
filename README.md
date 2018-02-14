@@ -2,7 +2,7 @@
 At long last! Viper4Linux!
 
 Disclaimer: 
-I am not associated with the awesome mates over at Viper. I wish I was, but it is what it is. (Jason, you're particularly awesome.)  You can find their git here: https://github.com/vipersaudio  
+I am not associated with the awesome mates over at Viper. I wish I was, but it is what it is. (Jason, you're particularly awesome.)  You can find their git here: https://github.com/vipersaudio  and their site here: http://vipersaudio.com/blog/  
 
 While all my software is free (GPL), theirs is not. This (my) software makes use of their non-free libraries. I have kept these libraries separate from this code, but it is dependent on them. You can find all the necessary instructions below. 
 

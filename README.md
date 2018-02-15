@@ -90,4 +90,15 @@ Viper will need to be restarted every time a setting is changed. (Sorry).
 I leverage pulseaudio and null sinks to do my work. Pulseaudio is somewhat... delicate. If you switch outputs after starting Viper, things may break. running `viper restart` should resolve this and I hope to code in contingencies in the future.  
 
 # Final Notes  
-I am not a great developer, just tossing this out there and if someone finds it useful, I will be happy. If you have improvements, please submit a DETAILED pull request. Everyone benefits from shared expertise. Thanks!
+I am not a great developer, just tossing this out there and if someone finds it useful, I will be happy. If you have improvements, please submit a DETAILED pull request. Everyone benefits from shared expertise. Thanks!  
+
+# Uninstallation  
+(I always hate it when devs don't include this)  
+To uninstall, remove the following files:  
+
+    sudo rm $yourgstreamerlibpath/libgstviperfx.so
+    sudo rm /lib/libviperfx.so
+    sudo rm $(command -v viper)
+    rm -rf ~/.config/viper4linux
+    
+Peace!

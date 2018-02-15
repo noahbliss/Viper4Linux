@@ -71,9 +71,10 @@ Step 6:
 # Configuration  
 Most of your configuration will be done in ~/.config/viper4linux with the following two files:  
   
-  devices.conf -- More to come on this as I dev more, but right now it is just one line with location=$your_alsa_sink_path_here 
+  devices.conf -- More to come on this as I dev more, but right now it is just one line with:  
+      `location=$your_alsa_sink_path_here`  
     If you have pactl available, you can find this information by using:  
-    `pactl list sinks | grep "Name: " -A1`  
+      `pactl list sinks | grep "Name: " -A1`  
     The part you want is after the "Name: " section.  
 
  

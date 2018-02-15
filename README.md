@@ -47,7 +47,7 @@ Step 3:
 Step 4:  
   Install the main library file. (this will be copied with a different name! Do not keep the original name!)
     
-    sudo cp viperfx_core_binary/libviperfx_x64_linux.so libviperfx.so
+    sudo cp viperfx_core_binary/libviperfx_x64_linux.so /lib/libviperfx.so
   
 Step 5: (optional)  
   Delete the uneeded git repos to free space.  

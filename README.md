@@ -72,7 +72,10 @@ Step 6:
 Most of your configuration will be done in ~/.config/viper4linux with the following two files:  
   
   devices.conf -- More to come on this as I dev more, but right now it is just one line with location=$your_alsa_sink_path_here 
-    (more to come on how to make this)  
+    If you have pactl available, you can find this information by using:  
+    `pactl list sinks | grep "Name: " -A1`  
+    The part you want is after the "Name: " section.  
+
  
   audio.conf -- This is where you configure how Viper behaves with all the cool bass boosting, reverb, clarity mods, etc.  
     You can find out what accepted values you can use here by running gst-inspect-1.0 viperfx. I have included all the known options for the plugin with mostly default values in the template file. 

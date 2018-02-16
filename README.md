@@ -36,8 +36,16 @@ Step 3:
     #Don't ask me why it is built into a hidden directory >.<
   
   You now need to install the plugin. The install path is different on different systems. On my Debian, it was located at /usr/lib/x86_64-linux-gnu/gstreamer-1.0/. Yours should have a ton of libgst*.so files in it.  
+
+  Debian:  
   
-    sudo cp libgstviperfx.so /usr/lib/x86_64-linux-gnu/gstreamer-1.0/
+    sudo cp libgstviperfx.so /usr/lib/x86_64-linux-gnu/gstreamer-1.0/  
+  Arch:  
+  
+    sudo cp libgstviperfx.so /usr/lib/gstreamer-1.0/  
+    
+  The rest of it:  
+  
     cd ../../.. #I think that should get us back to our main git directory.
     #Now test it with gst-inspect-1.0
     gst-inspect-1.0 viperfx

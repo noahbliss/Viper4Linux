@@ -17,6 +17,11 @@ Step 1:
   
     apt-get install build-essential  
     apt-get install gstreamer-1.0 
+    
+  For Arch:  
+  
+    sudo pacman -S automake base-devel  
+    sudo pacman -S (name of gstreamer package)  
 
 Step 2:  
   Get this software and their software, and more of their software...  

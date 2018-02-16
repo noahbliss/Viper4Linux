@@ -93,6 +93,9 @@ I leverage pulseaudio and null sinks to do my work. Pulseaudio is somewhat... de
 # Final Notes  
 I am not a great developer, just tossing this out there and if someone finds it useful, I will be happy. If you have improvements, please submit a DETAILED pull request. Everyone benefits from shared expertise. Thanks!  
 
+Got an idea? Comments/suggestions that aren't really appropriate for github? Want a community? Take a look at our Telegram group!  
+    https://t.me/joinchat/FTKC2A2bolHkFAyO-fuPjw  
+
 # Uninstallation  
 (I always hate it when devs don't include this)  
 To uninstall, remove the following files:  

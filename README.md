@@ -1,4 +1,4 @@
-# Viper4Linux
+# Viper4Linux - An Adaptive Digital Sound Processor
 At long last! Viper4Linux!
 
 Disclaimer: 

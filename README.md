@@ -22,6 +22,10 @@ Step 1:
   
     sudo pacman -S automake base-devel  
     sudo pacman -S (name of gstreamer package)  
+    
+  For Fedora:
+  
+  (I don't currently support Fedora. That said, there are reports of it working. Thobi from the Telegram group mentioned needing the gstreamer1-plugins-base-devel.x86_64 package.)  
 
 Step 2:  
   Get this software and their software, and more of their software...  

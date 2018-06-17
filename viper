@@ -12,7 +12,8 @@ mkdir -p $configpath
 mkdir -p $tmppath
 
 start () {
-	declare $(head -n1 $devicefile) #get location and desc from file
+	#declare $(head -n1 $devicefile) #get location and desc from file
+	location=$(pactl info | grep "Default Sink" | grep -oP "Default Sink: \K.+")
 	if [ -f $pidfile ]; then kill $(< $pidfile); fi
 	if [ -f $idfile ]; then
 		oldid=$(< $idfile)

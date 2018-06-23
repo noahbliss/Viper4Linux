@@ -5,7 +5,9 @@ audiofile=$configpath/audio.conf
 devicefile=$configpath/devices.conf
 tmppath=/tmp/viper4linux
 idfile=$tmppath/sinkid.tmp
+if [ -f $idfile ]; then oldid=$(< $idfile); fi
 pidfile=$tmppath/pid.tmp
+if [ -f $pidfile ]; then pid=$(< $pidfile); fi
 logfile=$tmppath/viper.log
 vipersink=viper
 mkdir -p $configpath
@@ -13,9 +15,8 @@ mkdir -p $tmppath
 
 start () {
 	declare $(head -n1 $devicefile) #get location and desc from file
-	if [ -f $pidfile ]; then kill $(< $pidfile); fi
+	if [ -f $pidfile ]; then kill $pid; fi
 	if [ -f $idfile ]; then
-		oldid=$(< $idfile)
 		pactl unload-module $oldid
 	fi
 	idnum=$(pactl load-module module-null-sink sink_name=$vipersink sink_properties=device.description="Viper4Linux")
@@ -35,12 +36,11 @@ start () {
 
 stop () {
         if [ -f $pidfile ]; then 
-		kill $(< $pidfile)
+		kill $pid
 		rm $pidfile
 		echo "Killed gstreamer process."
 	fi
         if [ -f $idfile ]; then
-                oldid=$(< $idfile)
                 pactl unload-module $oldid
 		rm $idfile
 		echo "Unloaded Viper sink."
@@ -53,17 +53,17 @@ restart () {
 
 status () {
 	if [ -f $pidfile ]; then pidfilestatus="There is a pidfile."; 
-		if ps -p $(< $pidfile) &>/dev/null; then
-		       	pidstatus="There is also a process running with the specified pid."
+		if ps -p $pid &>/dev/null; then
+		       	pidstatus="There is also a process running at pid $pid."
 			running="[RUNNING]"; else
-			pidstatus="However, there is no process running with the specified pid."
+			pidstatus="However, there is no process running with the expected pid."
 			running="[ERROR]"
 		fi; else 
 		running="[STOPPED]"
 	fi
 	if [ -f $idfile ]; then 
-		idfilestatus="There is an idfile. The viper sink seems to be loaded at id: $(< $idfile)."; else 
-		idfilestatus="No idfile found. (likely stopped)"
+		idfilestatus="There is an idfile. The viper sink seems to be loaded at id: $oldid."; else 
+		idfilestatus="No idfile found."
 	fi
 	echo "$running"
 	echo "$pidfilestatus $pidstatus"

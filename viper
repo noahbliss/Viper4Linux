@@ -35,15 +35,15 @@ start () {
 }
 
 stop () {
-        if [ -f $pidfile ]; then 
-		kill $pid
-		rm $pidfile
-		echo "Killed gstreamer process."
-	fi
+        if [ -f $pidfile ]; then
+				        if ps -p $pid &>/dev/null; then kill $pid; murdercanary="Killed process."; else murdercanary="Looks like it was already dead...?"; fi
+				        rm $pidfile && pidcanary="Deleted pidfile."
+				        echo "$murdercanary $pidcanary"
+        fi
         if [ -f $idfile ]; then
                 pactl unload-module $oldid
-		rm $idfile
-		echo "Unloaded Viper sink."
+								rm $idfile
+								echo "Unloaded Viper sink."
         fi
 }
 
@@ -52,17 +52,17 @@ restart () {
 }
 
 status () {
-	if [ -f $pidfile ]; then pidfilestatus="There is a pidfile."; 
+	if [ -f $pidfile ]; then pidfilestatus="There is a pidfile.";
 		if ps -p $pid &>/dev/null; then
 		       	pidstatus="There is also a process running at pid $pid."
 			running="[RUNNING]"; else
 			pidstatus="However, there is no process running with the expected pid."
 			running="[ERROR]"
-		fi; else 
+		fi; else
 		running="[STOPPED]"
 	fi
-	if [ -f $idfile ]; then 
-		idfilestatus="There is an idfile. The viper sink seems to be loaded at id: $oldid."; else 
+	if [ -f $idfile ]; then
+		idfilestatus="There is an idfile. The viper sink seems to be loaded at id: $oldid."; else
 		idfilestatus="No idfile found."
 	fi
 	echo "$running"

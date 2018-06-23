@@ -36,14 +36,14 @@ start () {
 
 stop () {
         if [ -f $pidfile ]; then
-				        if ps -p $pid &>/dev/null; then kill $pid; murdercanary="Killed process."; else murdercanary="Looks like it was already dead...?"; fi
-				        rm $pidfile && pidcanary="Deleted pidfile."
-				        echo "$murdercanary $pidcanary"
+		f ps -p $pid &>/dev/null; then kill $pid; murdercanary="Killed process."; else murdercanary="Looks like it was already dead...?"; fi
+		rm $pidfile && pidcanary="Deleted pidfile."
+		echo "$murdercanary $pidcanary"
         fi
         if [ -f $idfile ]; then
                 pactl unload-module $oldid
-								rm $idfile
-								echo "Unloaded Viper sink."
+		rm $idfile
+		echo "Unloaded Viper sink."
         fi
 }
 

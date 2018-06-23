@@ -36,7 +36,7 @@ start () {
 
 stop () {
         if [ -f $pidfile ]; then
-		f ps -p $pid &>/dev/null; then kill $pid; murdercanary="Killed process."; else murdercanary="Looks like it was already dead...?"; fi
+		if ps -p $pid &>/dev/null; then kill $pid; murdercanary="Killed process."; else murdercanary="Looks like it was already dead...?"; fi
 		rm $pidfile && pidcanary="Deleted pidfile."
 		echo "$murdercanary $pidcanary"
         fi

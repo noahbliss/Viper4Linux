@@ -14,10 +14,13 @@ mkdir -p $configpath
 mkdir -p $tmppath
 
 start () {
-	declare $(head -n1 $devicefile) #get location and desc from file
-	if [ -f $pidfile ]; then kill $pid; fi
-	if [ -f $idfile ]; then
-		pactl unload-module $oldid
+	stop
+	if [ -f $devicefile ]; then 
+		declare $(head -n1 $devicefile) #get location and desc from file
+	else
+		#Do our best.
+		location=$(pactl info | grep "Default Sink" | awk -F ": " '{print $2}')
+		if [ "$location" == "$vipersink" ]; then echo "Something is very wrong (Target is same as our vipersink name)."; return; fi
 	fi
 	idnum=$(pactl load-module module-null-sink sink_name=$vipersink sink_properties=device.description="Viper4Linux")
 	echo $idnum > $idfile

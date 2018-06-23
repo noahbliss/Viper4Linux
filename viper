@@ -59,6 +59,7 @@ status () {
 			pidstatus="However, there is no process running with the expected pid."
 			running="[ERROR]"
 		fi; else
+		pidfilestatus="No process."
 		running="[STOPPED]"
 	fi
 	if [ -f $idfile ]; then

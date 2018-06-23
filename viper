@@ -52,8 +52,21 @@ restart () {
 }
 
 status () {
-	if [ -f $pidfile ]; then echo "There is a pidfile. Gstreamer may be running at pid: $(< $pidfile)."; else echo "No pidfile found. (likely stopped)"; fi
-	if [ -f $idfile ]; then echo "There is an idfile. The viper sink seems to be loaded at id: $(< $idfile)."; else echo "No idfile found. (likely stopped)"; fi
+	if [ -f $pidfile ]; then pidfilestatus="There is a pidfile."; 
+		if ps -p $(< $pidfile) &>/dev/null; then
+		       	pidstatus="There is also a process running with the specified pid."
+			running="[RUNNING]"; else
+			pidstatus="However, there is no process running with the specified pid."
+			running="[ERROR]"
+		fi; else 
+		running="[STOPPED]"
+	fi
+	if [ -f $idfile ]; then 
+		idfilestatus="There is an idfile. The viper sink seems to be loaded at id: $(< $idfile)."; else 
+		idfilestatus="No idfile found. (likely stopped)"
+	fi
+	echo "$running"
+	echo "$pidfilestatus $pidstatus"
+	echo "$idfilestatus"
 }
-
 $@

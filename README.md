@@ -74,6 +74,7 @@ Step 5: (optional)
 Step 6:  
   Configure the system by installing the configs.  
   This will be what makes the magic work.  
+  **Note: Current V4L will attempt to use the current default output sink if it cannot find the devices.conf file. If you prefer this fallback behavior, then simply do not have a devices.conf file in the following path. 
     
     cd Viper4Linux
     cp -r viper4linux ~/.config  
@@ -93,6 +94,9 @@ Most of your configuration will be done in ~/.config/viper4linux with the follow
     If you have pactl available, you can find this information by using:  
       `pactl list sinks | grep "Name: " -A1`  
     The part you want is after the "Name: " section.  
+    
+   **Current V4L will attempt to use the current default output sink if it cannot find the devices.conf file. 
+    
 
  
   audio.conf -- This is where you configure how Viper behaves with all the cool bass boosting, reverb, clarity mods, etc.  

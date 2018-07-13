@@ -1,5 +1,5 @@
 # Viper4Linux - An Adaptive Digital Sound Processor
-At long last! Viper4Linux!
+Making Loonix sound good.  
 
 Disclaimer: 
 I am not associated with the awesome mates over at Viper. I wish I was, but it is what it is. (Jason, you're particularly awesome.)  You can find their git here: https://github.com/vipersaudio  and their site here: http://vipersaudio.com/blog/  
@@ -110,6 +110,10 @@ viper(.sh) has four options right now, `start`, `stop`, `restart`, and `status`.
 Viper will need to be restarted every time a setting is changed. (Sorry).
 
 I leverage pulseaudio and null sinks to do my work. Pulseaudio is somewhat... delicate. If you switch outputs after starting Viper, things may break. running `viper restart` should resolve this and I hope to code in contingencies in the future.  
+
+I did encounter an issue where audio would become intermittently choppy. If you also have this issue, try editing /etc/pulse/default.pa (as root) and adding the following line. If you already have this line, edit it, DO NOT MAKE A DUPLICATE. (things break.)  
+
+  `load-module module-udev-detect tsched=0`  
 
 # Final Notes  
 I am not a great developer, just tossing this out there and if someone finds it useful, I will be happy. If you have improvements, please submit a DETAILED pull request. Everyone benefits from shared expertise. Thanks!  

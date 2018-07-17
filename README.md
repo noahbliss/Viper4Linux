@@ -20,7 +20,7 @@ Step 1:
     
   For Arch:  
   
-    sudo pacman -S automake base-devel  
+    sudo pacman -S base-devel  
     sudo pacman -S (name of gstreamer package)  
     
   For Fedora:

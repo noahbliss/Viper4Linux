@@ -67,7 +67,7 @@ Step 4:
     sudo cp viperfx_core_binary/libviperfx_x64_linux.so /lib/libviperfx.so
   
 Step 5: (optional)  
-  Delete the uneeded git repos to free space.  
+  Delete the unneeded git repos to free space.  
   
     rm -rf viperfx_core_binary gst-plugin-viperfx
     

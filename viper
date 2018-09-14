@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 #Noah Bliss
 configpath=$HOME/.config/viper4linux
+fallbackconfigpath=/etc/viper4linux
+if ! [ -d "$configpath" ]; then configpath="$fallbackconfigpath"; fi
 audiofile=$configpath/audio.conf
 devicefile=$configpath/devices.conf
 tmppath=/tmp/viper4linux
@@ -12,6 +14,7 @@ logfile=$tmppath/viper.log
 vipersink=viper
 mkdir -p $configpath
 mkdir -p $tmppath
+
 
 start () {
 	stop

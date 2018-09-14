@@ -9,6 +9,17 @@ While all my software is free (GPL), theirs is not. This (my) software makes use
 # Installation
 I hope to release a script shortly that will automate installation, but alas, I am busy...
 
+## Packages
+
+### Arch  
+We have a package for Arch made by MaxFomo in the Telegram group. If you want to give that a go it could save you time and help us test!  
+
+    pacaur -S viper4linux  
+    
+Let us know in the group how it goes!  
+
+## Manually
+
 Step 1:  
   Get the build-essential or similar package installed. You will be compiling their gstreamer plugin.  
   You will also need gstreamer-1.0 (not gstreamer, and not gstreamer-0.10)  

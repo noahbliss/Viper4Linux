@@ -14,7 +14,7 @@ I hope to release a script shortly that will automate installation, but alas, I 
 ### Arch  
 We have a package for Arch made by MaxFomo in the Telegram group. If you want to give that a go it could save you time and help us test!  
 
-    pacaur -S viper4linux  
+    yay -S viper4linux-git  
     
 Let us know in the group how it goes!  
 

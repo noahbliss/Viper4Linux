@@ -77,6 +77,8 @@ Step 4:
     
     sudo cp viperfx_core_binary/libviperfx_x64_linux.so /lib/libviperfx.so
   
+  There are some distros that use different lib paths. For example, Solus wants the file to be placed at /usr/lib64/libviperfx.so. 
+  
 Step 5: (optional)  
   Delete the unneeded git repos to free space.  
   

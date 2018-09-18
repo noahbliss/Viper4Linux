@@ -26,13 +26,19 @@ Step 1:
   
   For Debian:  
   
-    apt-get install build-essential  
-    apt-get install gstreamer-1.0 
+    sudo apt-get install build-essential  
+    sudo apt-get install gstreamer-1.0 
     
   For Arch:  
   
     sudo pacman -S base-devel  
     sudo pacman -S (name of gstreamer package)  
+  
+  For Ubuntu the following packages are reported to be needed:  
+  
+    sudo apt-get install build-essential  
+    sudo apt-get install libgstreamer1.0-dev  
+    sudo apt-get install libgstreamer-plugins-base1.0-dev  
     
   For Fedora:
   

@@ -39,7 +39,13 @@ Step 1:
     sudo apt-get install build-essential  
     sudo apt-get install libgstreamer1.0-dev  
     sudo apt-get install libgstreamer-plugins-base1.0-dev  
-    
+  
+  For Solus the following packages are reported to be needed:  
+  
+    sudo eopkg it -c system.devel  
+    sudo eopkg it gstreamer-1.0-devel  
+    sudo eopkg it gstreamer-1.0-plugins-base-devel  
+
   For Fedora:
   
   (I don't currently support Fedora. That said, there are reports of it working. Thobi from the Telegram group mentioned needing the gstreamer1-plugins-base-devel.x86_64 package.)  

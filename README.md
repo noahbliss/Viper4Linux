@@ -51,7 +51,7 @@ Step 2:
   Get this software and their software, and more of their software...  
   (You will be using a fork of their gstreamer software. Feel free to compare it, I only changed one line.)  
   
-    git clone https://github.com/L3vi47h4N/Viper4Linux.git  
+    git clone https://github.com/L3vi47h4N/Viper4Linux.git -b deepin  
     git clone https://github.com/L3vi47h4N/gst-plugin-viperfx  
     git clone https://github.com/vipersaudio/viperfx_core_binary.git  
   

@@ -1,4 +1,4 @@
-# Viper4Linux - An Adaptive Digital Sound Processor
+# Viper4Linux - An Adaptive Digital Sound Processor - Deepin Edition
 Making Loonix sound good.  
 
 Disclaimer: 
@@ -6,19 +6,14 @@ I am not associated with the awesome mates over at Viper. I wish I was, but it i
 
 While all my software is free (GPL), theirs is not. This (my) software makes use of their non-free libraries. I have kept these libraries separate from this code, but it is dependent on them. You can find all the necessary instructions below. 
 
-DOES NOT WORK WITH DEEPIN (very well). There is a bug in Deepin where any new audio streams are forced to go to the "default" output device even if they are specifically told to go elsewhere. Please harass the Deepin devs for me.  
+This verison is specifically patched for working around Deepin's bugs. Please use the main branch for Gnome/KDE/i3 and the majority of their children. Props to https://github.com/topjor for the initial legwork on this. 
 
 # Installation
 I hope to release a script shortly that will automate installation, but alas, I am busy...
 
 ## Packages
 
-### Arch  
-We have a package for Arch made by MaxFomo in the Telegram group. If you want to give that a go it could save you time and help us test!  
-
-    yay -S viper4linux-git  
-    
-Let us know in the group how it goes!  
+None for this branch. 
 
 ## Manually
 

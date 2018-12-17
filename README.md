@@ -6,7 +6,7 @@ I am not associated with the awesome mates over at Viper. I wish I was, but it i
 
 While all my software is free (GPL), theirs is not. This (my) software makes use of their non-free libraries. I have kept these libraries separate from this code, but it is dependent on them. You can find all the necessary instructions below. 
 
-This verison is specifically patched for working around Deepin's bugs. Please use the main branch for Gnome/KDE/i3 and the majority of their children. Props to https://github.com/topjor for the initial legwork on this. 
+This verison is specifically patched for working around Deepin's bugs. Please use the main branch for Gnome/KDE/i3 and the majority of their children. Props to [topjor](https://github.com/topjor) for the initial legwork on this. 
 
 # Installation
 I hope to release a script shortly that will automate installation, but alas, I am busy...

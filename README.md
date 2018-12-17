@@ -6,6 +6,8 @@ I am not associated with the awesome mates over at Viper. I wish I was, but it i
 
 While all my software is free (GPL), theirs is not. This (my) software makes use of their non-free libraries. I have kept these libraries separate from this code, but it is dependent on them. You can find all the necessary instructions below. 
 
+DOES NOT WORK WITH DEEPIN (very well). There is a bug in Deepin where any new audio streams are forced to go to the "default" output device even if they are specifically told to go elsewhere. Please harass the Deepin devs for me.  
+
 # Installation
 I hope to release a script shortly that will automate installation, but alas, I am busy...
 

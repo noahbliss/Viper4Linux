@@ -38,6 +38,10 @@ start () {
 	echo $! > $pidfile
 	echo "Moving existing audio streams to Viper..."
 	while read existing_sink; do pactl move-sink-input $existing_sink $vipersink; done < <(pactl list sink-inputs short | awk '{print $1}')
+	echo "Moving Viper audio stream to original output"
+	pid=$(cat $pidfile)
+	gst=$(pactl list sink-inputs | grep -B20 "application.process.id = \"$pid\"" | grep "Sink Input #" | grep -Eo "[0-9]{1,4}")
+	pactl move-sink-input $gst $location
 }
 
 stop () {

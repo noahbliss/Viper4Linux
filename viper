@@ -14,6 +14,8 @@ logfile=$tmppath/viper.log
 vipersink=viper
 mkdir -p $configpath
 mkdir -p $tmppath
+# Make $configpath the working directory. This allows IRS and similar files to be referenced in configs without needing a path prefix. 
+cd "$configpath"
 
 
 start () {

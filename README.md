@@ -174,5 +174,5 @@ Shout-outs and stuff:
 We've got some cool people in our community. A few notable mentions follow below in no particular order.  
 
 [ThePBone](https://github.com/ThePBone) - GUI development and work with the dynamic system.  
-@yochananmarqos on Telegram. - Work with the creation and maintenance of the AUR packages.  
+[yochananmarqos](https://github.com/yochananmarqos) - Work with the creation and maintenance of the AUR packages.  
 @MaxFomo on Telegram. - AUR package creation and maintenance.  

@@ -31,7 +31,8 @@ Step 1:
     sudo apt-get install build-essential  
     sudo apt-get install autoconf  
     sudo apt-get install libtool  
-    sudo apt-get install gstreamer-1.0 
+    sudo apt-get install gstreamer-1.0  
+    sudo apt install libgstreamer-plugins-base1.0-dev  
     
   For Arch:  
   

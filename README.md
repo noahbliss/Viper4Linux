@@ -9,7 +9,7 @@ While all my software is free (GPL), theirs is not. This (my) software makes use
 DOES NOT WORK WITH DEEPIN (very well). Check the [deepin](https://github.com/L3vi47h4N/Viper4Linux/tree/deepin) branch for a patched version. (Props to [topjor](https://github.com/topjor) for this fix.) There is a bug in Deepin where any new audio streams are forced to go to the "default" output device even if they are specifically told to go elsewhere. Please harass the Deepin devs for me. 
 
 # Installation
-I hope to release a script shortly that will automate installation, but alas, I am busy...
+At this point I've given up on automating the installation process, but it isn't that bad really. If you're lazy, use Arch.  
 
 ## Packages
 
@@ -18,7 +18,9 @@ We have a package for Arch made by MaxFomo in the Telegram group. If you want to
 
     yay -S viper4linux-git  
     
-Let us know in the group how it goes!  
+We also have a package for the GUI! The one below is for the git version, go to https://github.com/ThePBone/Viper4Linux-GUI and look for the stable builds if you'd prefer that route.  
+
+    yay -S viper4linux-gui-git
 
 ## Manually
 
@@ -117,6 +119,9 @@ Step 6:
     #/usr/bin and /bin will also work. *shrug*
     
 # Configuration  
+
+We have a GUI made by ThePBone which is available here: https://github.com/ThePBone/Viper4Linux-GUI  
+
 Most of your configuration will be done in ~/.config/viper4linux with the following two files:  
   
   devices.conf -- More to come on this as I dev more, but right now it is just one line with:  

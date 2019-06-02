@@ -29,6 +29,7 @@ Step 1:
   For Debian:  
   
     sudo apt-get install build-essential  
+    sudo apt-get install autoconf  
     sudo apt-get install gstreamer-1.0 
     
   For Arch:  

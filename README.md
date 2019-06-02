@@ -14,11 +14,11 @@ At this point I've given up on automating the installation process, but it isn't
 ## Packages
 
 ### Arch  
-We have a package for Arch made by MaxFomo in the Telegram group. If you want to give that a go it could save you time and help us test!  
+We have a package for Arch.
 
     yay -S viper4linux-git  
     
-We also have a package for the GUI! The one below is for the git version, go to https://github.com/ThePBone/Viper4Linux-GUI and look for the stable builds if you'd prefer that route.  
+We also have a package for the GUI! check it out at https://github.com/ThePBone/Viper4Linux-GUI and look for the stable builds if you'd prefer that route.  
 
     yay -S viper4linux-gui-git
 
@@ -169,3 +169,10 @@ To uninstall, remove the following files:
     rm -rf ~/.config/viper4linux
     
 Peace!
+
+Shout-outs and stuff:  
+We've got some cool people in our community. A few notable mentions follow below in no particular order.  
+
+[ThePBone](https://github.com/ThePBone) - GUI development and work with the dynamic system.  
+@yochananmarqos on Telegram. - Work with the creation and maintenance of the AUR packages.  
+@MaxFomo on Telegram. - AUR package creation and maintenance.  

@@ -34,7 +34,7 @@ Step 1:
     sudo apt-get install autoconf  
     sudo apt-get install libtool  
     sudo apt-get install gstreamer-1.0  
-    sudo apt install libgstreamer-plugins-base1.0-dev  
+    sudo apt-get install libgstreamer-plugins-base1.0-dev  
     
   For Arch:  
   
@@ -59,7 +59,6 @@ Step 1:
 
 Step 2:  
   Get this software and their software, and more of their software...  
-  (You will be using a fork of their gstreamer software. Feel free to compare it, I only changed one line.)  
   
     git clone https://github.com/L3vi47h4N/Viper4Linux.git  
     git clone https://github.com/L3vi47h4N/gst-plugin-viperfx  

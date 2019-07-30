@@ -60,8 +60,8 @@ Step 1:
 Step 2:  
   Get this software and their software, and more of their software...  
   
-    git clone https://github.com/L3vi47h4N/Viper4Linux.git  
-    git clone https://github.com/L3vi47h4N/gst-plugin-viperfx  
+    git clone https://github.com/noahbliss/Viper4Linux.git  
+    git clone https://github.com/noahbliss/gst-plugin-viperfx  
     git clone https://github.com/vipersaudio/viperfx_core_binary.git  
   
 Step 3:  
@@ -153,7 +153,7 @@ I did encounter an issue where audio would become intermittently choppy. If you 
 I am not a great developer, just tossing this out there and if someone finds it useful, I will be happy. If you have improvements, please submit a DETAILED pull request. Everyone benefits from shared expertise. Thanks!  
 
 Got a dope config? Don't like mine but don't want to make one yourself? Check out alternatives made by our community here! Feel free to submit a pull request with your own too!  
-    https://github.com/L3vi47h4N/Viper4Linux-Configs  
+    https://github.com/noahbliss/Viper4Linux-Configs  
 
 Got an idea? Comments/suggestions that aren't really appropriate for github? Want a community? Take a look at our Telegram group!  
     https://t.me/joinchat/FTKC2A2bolHkFAyO-fuPjw  

@@ -32,7 +32,7 @@ Once you have added the repo, refresh the package list.
 
     sudo zypper refresh
     
-Now you're ready to install viper4linux :
+Now you're ready to install viper4linux.  
 
     sudo zypper in gstreamer-plugins-viperfx libviperfx viper4linux
     

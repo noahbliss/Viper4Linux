@@ -14,7 +14,7 @@ At this point I've given up on automating the installation process, but it isn't
 ## Packages
 
 ### Arch  
-We have a package for Arch.
+We have a package for Arch.  
 
     yay -S viper4linux-git  
     
@@ -24,11 +24,11 @@ We also have a package for the GUI! check it out at https://github.com/ThePBone/
  
 ### Opensuse
 We have a package for opensuse Leap 15.1 and opensuse Tumbleweed.
-First you need to add the repos according to your version (in this example Tumbleweed is used) :
+First you need to add the repos according to your version (in this example Tumbleweed is used).  
 
     sudo zypper ar https://download.opensuse.org/repositories/home:/bosconovic:/viper4linux/openSUSE_Tumbleweed/ viper  
    
-Once you have added the repo, refresh the package list :
+Once you have added the repo, refresh the package list.  
 
     sudo zypper refresh
     
@@ -36,7 +36,7 @@ Now you're ready to install viper4linux :
 
     sudo zypper in gstreamer-plugins-viperfx libviperfx viper4linux
     
-There is also a package for the stable releases of the GUI (https://github.com/ThePBone/Viper4Linux-GUI) :
+There is also a package for the stable releases of the GUI (https://github.com/ThePBone/Viper4Linux-GUI).  
 
     sudo zypper in viper4linux-gui
 
@@ -44,7 +44,7 @@ There is also a package for the stable releases of the GUI (https://github.com/T
 
 Step 1:  
   Get the build-essential or similar package installed. You will be compiling their gstreamer plugin.  
-  You will also need gstreamer-1.0 (not gstreamer, and not gstreamer-0.10)  
+  You will also need gstreamer-1.0 (not gstreamer, and not gstreamer-0.10).  
   
   For Debian:  
   
@@ -71,7 +71,7 @@ Step 1:
     sudo eopkg it gstreamer-1.0-devel  
     sudo eopkg it gstreamer-1.0-plugins-base-devel  
 
-  For Fedora:
+  For Fedora:  
   
   (I don't currently support Fedora. That said, there are reports of it working. Thobi from the Telegram group mentioned needing the gstreamer1-plugins-base-devel.x86_64 package.)  
 

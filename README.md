@@ -193,3 +193,4 @@ We've got some cool people in our community. A few notable mentions follow below
 [ThePBone](https://github.com/ThePBone) - GUI development and work with the dynamic system.  
 [yochananmarqos](https://github.com/yochananmarqos) - Work with the creation and maintenance of the AUR packages.  
 @MaxFomo on Telegram. - AUR package creation and maintenance.  
+[fcuzzocrea](https://github.com/fcuzzocrea) - OpenSuse package creation and maintenance.  

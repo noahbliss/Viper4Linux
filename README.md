@@ -21,6 +21,24 @@ We have a package for Arch.
 We also have a package for the GUI! check it out at https://github.com/ThePBone/Viper4Linux-GUI and look for the stable builds if you'd prefer that route.  
 
     yay -S viper4linux-gui-git
+ 
+### Opensuse
+We have a package for opensuse Leap 15.1 and opensuse Tumbleweed.
+First you need to add the repos according to your version (in this example Tumbleweed is used) :
+
+    sudo zypper ar https://download.opensuse.org/repositories/home:/bosconovic:/viper4linux/openSUSE_Tumbleweed/ viper  
+   
+Once you have added the repo, refresh the package list :
+
+    sudo zypper refresh
+    
+Now you're ready to install viper4linux :
+
+    sudo zypper in gstreamer-plugins-viperfx libviperfx viper4linux
+    
+There is also a package for the stable releases of the GUI (https://github.com/ThePBone/Viper4Linux-GUI) :
+
+    sudo zypper in viper4linux-gui
 
 ## Manually
 

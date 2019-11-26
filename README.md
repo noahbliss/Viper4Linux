@@ -18,7 +18,13 @@ We have a package for Arch.
 
     yay -S viper4linux-git  
     
-We also have a package for the GUI! check it out at https://github.com/ThePBone/Viper4Linux-GUI and look for the stable builds if you'd prefer that route.  
+We also have a package for the GUI! check it out at https://github.com/ThePBone/Viper4Linux-GUI.
+
+  Stable package:
+    
+    yay -S viper4linux-gui
+    
+  Development package:
 
     yay -S viper4linux-gui-git
  
@@ -48,28 +54,20 @@ Step 1:
   
   For Debian:  
   
-    sudo apt-get install build-essential  
-    sudo apt-get install autoconf  
-    sudo apt-get install libtool  
-    sudo apt-get install gstreamer-1.0  
-    sudo apt-get install libgstreamer-plugins-base1.0-dev  
+    sudo apt install build-essential git autoconf libtool gstreamer-1.0 libgstreamer-plugins-base1.0-dev
     
   For Arch:  
   
-    sudo pacman -S base-devel  
-    sudo pacman -S (name of gstreamer package)  
+    sudo pacman -S base-devel git gst-plugins-good 
   
   For Ubuntu the following packages are reported to be needed:  
   
-    sudo apt-get install build-essential  
-    sudo apt-get install libgstreamer1.0-dev  
-    sudo apt-get install libgstreamer-plugins-base1.0-dev  
+    sudo apt install build-essential git autoconf automake autopoint libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev  
   
   For Solus the following packages are reported to be needed:  
   
     sudo eopkg it -c system.devel  
-    sudo eopkg it gstreamer-1.0-devel  
-    sudo eopkg it gstreamer-1.0-plugins-base-devel  
+    sudo eopkg it gstreamer-1.0-devel gstreamer-1.0-plugins-base-devel  
 
   For Fedora:  
   

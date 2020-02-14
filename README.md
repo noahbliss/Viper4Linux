@@ -54,7 +54,7 @@ Step 1:
   
   For Debian:  
   
-    sudo apt install build-essential git autoconf libtool gstreamer-1.0 libgstreamer-plugins-base1.0-dev
+    sudo apt install build-essential git autoconf libtool gstreamer-1.0 libgstreamer-plugins-base1.0-dev gstreamer1.0-tools
     
   For Arch:  
   

@@ -79,7 +79,7 @@ Step 2:
   Get this software and their software, and more of their software...  
   
     git clone https://github.com/noahbliss/Viper4Linux.git  
-    git clone git clone https://github.com/Audio4Linux/gst-plugin-viperfx   
+    git clone https://github.com/Audio4Linux/gst-plugin-viperfx   
     git clone https://github.com/vipersaudio/viperfx_core_binary.git  
   
 Step 3:  

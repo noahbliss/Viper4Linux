@@ -63,7 +63,7 @@ stop () {
 		echo "$murdercanary $pidcanary"
         fi
         if [ -f $idfile ]; then
-             e   pactl unload-module $oldid
+                pactl unload-module $oldid
 		rm "$idfile"
 		echo "Unloaded Viper sink."
 		defsink=$(LANG=C pactl info | grep "Default Sink" | awk -F ": " '{print $2}')

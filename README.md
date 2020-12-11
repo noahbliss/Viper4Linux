@@ -50,7 +50,7 @@ There is also a package for the stable releases of the GUI (https://github.com/T
 
 ## Manually
 
-Step 1:  
+### Step 1:  
   Get the build-essential or similar package installed. You will be compiling their gstreamer plugin.  
   You will also need gstreamer-1.0 (not gstreamer, and not gstreamer-0.10).  
   
@@ -75,14 +75,14 @@ Step 1:
   
   (I don't currently support Fedora. That said, there are reports of it working. Thobi from the Telegram group mentioned needing the gstreamer1-plugins-base-devel.x86_64 package.)  
 
-Step 2:  
+### Step 2:  
   Get this software and their software, and more of their software...  
   
     git clone https://github.com/noahbliss/Viper4Linux.git  
     git clone https://github.com/Audio4Linux/gst-plugin-viperfx   
     git clone https://github.com/vipersaudio/viperfx_core_binary.git  
   
-Step 3:  
+### Step 3:  
   Build the gstreamer plugin.  
   
     cd gst-plugin-viperfx  
@@ -107,19 +107,19 @@ Step 3:
     
   If this doesn't return a ton of options related to viper, then check the permissions on the file that they match the other files. If they do, double check that the plugin compiled properly.  
   
-Step 4:  
+### Step 4:  
   Install the main library file. (this will be copied with a different name! Do not keep the original name!)
     
     sudo cp viperfx_core_binary/libviperfx_x64_linux.so /lib/libviperfx.so
   
   There are some distros that use different lib paths. For example, Solus wants the file to be placed at /usr/lib64/libviperfx.so. 
   
-Step 5: (optional)  
+### Step 5: (optional)  
   Delete the unneeded git repos to free space.  
   
     rm -rf viperfx_core_binary gst-plugin-viperfx
     
-Step 6:  
+### Step 6:  
   Configure the system by installing the configs.  
   This will be what makes the magic work.  
   **Note: Current V4L will attempt to use the current default output sink if it cannot find the devices.conf file. If you prefer this fallback behavior, then simply do not have a devices.conf file in the following path. 

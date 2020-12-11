@@ -173,7 +173,7 @@ Got a dope config? Don't like mine but don't want to make one yourself? Check ou
     https://github.com/noahbliss/Viper4Linux-Configs  
 
 Got an idea? Comments/suggestions that aren't really appropriate for github? Want a community? Take a look at our Telegram group!  
-    https://t.me/joinchat/FTKC2A2bolHkFAyO-fuPjw  
+    https://t.me/Viper4Linux
 
 # Uninstallation  
 (I always hate it when devs don't include this)  
